@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 import { Pokemons } from './pokemons';
 import { PokemonService } from './pokemons.service';
+
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-pokemons',
@@ -11,7 +14,8 @@ import { PokemonService } from './pokemons.service';
 export class PokemonsComponent implements OnInit {
 
   pokemons: Pokemons;
-  
+  urlImg = environment.urlImg;
+
   constructor(
     private activated: ActivatedRoute,
     private pokemonsService: PokemonService

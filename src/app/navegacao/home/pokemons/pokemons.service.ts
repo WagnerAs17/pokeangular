@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pokemons } from './pokemons';
+import { environment } from '../../../../environments/environment';
 
-const API_V2 = "https://pokeapi.co/api/v2/";
-const API = ''
+const API_V2 = environment.apiPokemonV2;
 @Injectable({
     providedIn: 'root'
 })
