@@ -11,8 +11,7 @@ import { PokemonService } from './pokemons.service';
 export class PokemonsComponent implements OnInit {
 
   pokemons: Pokemons;
-  descriptions: any;
-
+  
   constructor(
     private activated: ActivatedRoute,
     private pokemonsService: PokemonService
