@@ -14,4 +14,4 @@ import { PokemonCharacteristicComponent } from './home/pokemons/pokemon-characte
     exports: [HomeComponent, MenuComponent],
     providers: [],
 })
-export class NavegacaoModule {}
+export class NavigationModule {}

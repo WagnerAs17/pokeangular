@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './navegacao/home/home.component';
-import { PokemonsResolve } from './navegacao/home/pokemons/pokemons.resolve';
+import { HomeComponent } from './navigation/home/home.component';
+import { PokemonsResolve } from './navigation/home/pokemons/pokemons.resolve';
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' , 
         resolve: { pokemons: PokemonsResolve}
